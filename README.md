@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Sticky Notes React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React application that allows users to create and manage sticky notes.This app utilizes React hooks such as `useState`, `useEffect`, `createContext` and `useContext` to handle the state and display of sticky notes.
 
-## Available Scripts
+## Features 
 
-In the project directory, you can run:
+- Create new sticky notes with user input.
+- Persistent storage of notes using `localStorage`.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- CSS 
+- JS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation 
 
-### `npm test`
+1. Clone the repository: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```bash 
+https://github.com/Oslinjohn20/React-Sticky-Notes.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd React-Sticky-Notes
+npm install
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+``` 
 
-### `npm run eject`
+open your browser and visit `http://localhost:3000`  to view app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage 
+1. Open the app in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Clickc on the `Add Note` button to create a new sticky note.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Double-click on a note to edit its content.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Each sticky note can be customized by color for your importance prefence.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Context API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application uses React's Context API to manage the state of the sticky notes. The `StickyNotesContext` provides a centralized state that is consumed by various components.
 
-### Code Splitting
+## LocalStorage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sticky ntoes are stored in the browsers `localStorage` to provide persistence across page reloads.
